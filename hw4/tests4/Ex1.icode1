@@ -1,0 +1,39 @@
+icode1 Ex1 simple
+string L1 "The result is \n\n" 
+mainMethod m_main_0
+
+method m_main_0 Stm10 1 0
+Exp1 : CONST 0
+Stm1 :  ESTM Exp1
+Exp17 : TEMP t11
+Exp4 : CONST 3
+Exp5 : CONST 4
+Exp6 : BINOP PLUS Exp4 Exp5
+Exp7 : CONST 5
+Exp8 : CONST 6
+Exp9 : BINOP PLUS Exp7 Exp8
+Exp16 : BINOP MUL Exp6 Exp9
+Stm2 : MOVE Exp17 Exp16
+Exp3 : TEMP t10
+Exp18 : TEMP t11
+Stm3 : MOVE Exp3 Exp18
+Stm4 : SEQ Stm2 Stm3
+Exp19 : TEMP t11
+Exp20 : ESEQ Stm4 Exp19
+Stm5 :  ESTM Exp20
+Stm6 : SEQ Stm1 Stm5
+Exp28 : NAME b_printString_0
+Exp26 : NAME b_stringConcatenate_0
+Exp21 : NAME L1
+Exp24 : NAME b_intToString_0
+Exp23 : TEMP t10
+Exp25 : CALL Exp24 Exp23 
+Exp27 : CALL Exp26 Exp21 Exp25 
+Exp29 : CALL Exp28 Exp27 
+Stm7 :  ESTM Exp29
+Stm8 : SEQ Stm6 Stm7
+Stm9 : LABEL L0
+Stm10 : SEQ Stm8 Stm9
+endMethod
+
+

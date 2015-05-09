@@ -1,0 +1,156 @@
+icode2 Fib linux64
+string L2 "\n"
+mainMethod m_main_0
+
+method m_main_0 1 0
+Stm141 : LABEL L10
+Exp1 : TEMP t16
+Exp2 : TEMP %r15
+Stm83 : MOVE Exp1 Exp2
+Exp3 : TEMP t17
+Exp4 : TEMP %r14
+Stm86 : MOVE Exp3 Exp4
+Exp5 : TEMP t18
+Exp6 : TEMP %r13
+Stm89 : MOVE Exp5 Exp6
+Exp7 : TEMP t19
+Exp8 : TEMP %r12
+Stm92 : MOVE Exp7 Exp8
+Exp9 : TEMP t20
+Exp10 : TEMP %rbx
+Stm95 : MOVE Exp9 Exp10
+Exp11 : TEMP t21
+Exp12 : TEMP %rdi
+Stm98 : MOVE Exp11 Exp12
+Exp101 : TEMP t30
+Exp16 : NAME m_fib_0
+Exp17 : CONST 30
+Exp99 : CALL Exp16 Exp17 
+Stm101 : MOVE Exp101 Exp99
+Exp107 : TEMP t31
+Exp15 : NAME b_intToString_0
+Exp102 : TEMP t30
+Exp105 : CALL Exp15 Exp102 
+Stm104 : MOVE Exp107 Exp105
+Exp115 : TEMP t32
+Exp14 : NAME b_stringConcatenate_0
+Exp108 : TEMP t31
+Exp20 : NAME L2
+Exp113 : CALL Exp14 Exp108 Exp20 
+Stm108 : MOVE Exp115 Exp113
+Exp13 : NAME b_printString_0
+Exp116 : TEMP t32
+Exp119 : CALL Exp13 Exp116 
+Stm111 :  ESTM Exp119
+Stm8 : LABEL L0
+Exp23 : TEMP %rbx
+Exp24 : TEMP t20
+Stm117 : MOVE Exp23 Exp24
+Exp25 : TEMP %r12
+Exp26 : TEMP t19
+Stm122 : MOVE Exp25 Exp26
+Exp27 : TEMP %r13
+Exp28 : TEMP t18
+Stm127 : MOVE Exp27 Exp28
+Exp29 : TEMP %r14
+Exp30 : TEMP t17
+Stm132 : MOVE Exp29 Exp30
+Exp31 : TEMP %r15
+Exp32 : TEMP t16
+Stm137 : MOVE Exp31 Exp32
+Stm140 : JUMP L9
+Stm143 : LABEL L9
+endMethod
+
+
+method m_fib_0 1 0
+Stm238 : LABEL L12
+Exp33 : TEMP t22
+Exp34 : TEMP %r15
+Stm145 : MOVE Exp33 Exp34
+Exp35 : TEMP t23
+Exp36 : TEMP %r14
+Stm148 : MOVE Exp35 Exp36
+Exp37 : TEMP t24
+Exp38 : TEMP %r13
+Stm151 : MOVE Exp37 Exp38
+Exp39 : TEMP t25
+Exp40 : TEMP %r12
+Stm154 : MOVE Exp39 Exp40
+Exp41 : TEMP t26
+Exp42 : TEMP %rbx
+Stm157 : MOVE Exp41 Exp42
+Exp43 : TEMP t27
+Exp44 : TEMP %rdi
+Stm160 : MOVE Exp43 Exp44
+Exp45 : TEMP t27
+Exp46 : CONST 1
+Stm163 : CJUMP LE Exp45 Exp46 L6 L7
+Stm39 : LABEL L7
+Exp49 : TEMP t28
+Exp50 : CONST 0
+Stm173 : MOVE Exp49 Exp50
+Stm43 : LABEL L8
+Exp51 : TEMP t28
+Exp53 : CONST 1
+Stm179 : CJUMP EQ Exp51 Exp53 L3 L4
+Stm54 : LABEL L4
+Exp167 : TEMP t33
+Exp57 : NAME m_fib_0
+Exp58 : TEMP t27
+Exp59 : CONST 1
+Exp161 : BINOP MINUS Exp58 Exp59
+Exp165 : CALL Exp57 Exp161 
+Stm191 : MOVE Exp167 Exp165
+Exp181 : TEMP t35
+Exp168 : TEMP t33
+Stm197 : MOVE Exp181 Exp168
+Exp179 : TEMP t34
+Exp62 : NAME m_fib_0
+Exp63 : TEMP t27
+Exp64 : CONST 2
+Exp173 : BINOP MINUS Exp63 Exp64
+Exp177 : CALL Exp62 Exp173 
+Stm195 : MOVE Exp179 Exp177
+Exp56 : TEMP t29
+Exp182 : TEMP t35
+Exp180 : TEMP t34
+Exp184 : BINOP PLUS Exp182 Exp180
+Stm201 : MOVE Exp56 Exp184
+Stm62 : LABEL L1
+Exp68 : TEMP %rax
+Exp69 : TEMP t29
+Stm208 : MOVE Exp68 Exp69
+Exp70 : TEMP %rbx
+Exp71 : TEMP t26
+Stm214 : MOVE Exp70 Exp71
+Exp72 : TEMP %r12
+Exp73 : TEMP t25
+Stm219 : MOVE Exp72 Exp73
+Exp74 : TEMP %r13
+Exp75 : TEMP t24
+Stm224 : MOVE Exp74 Exp75
+Exp76 : TEMP %r14
+Exp77 : TEMP t23
+Stm229 : MOVE Exp76 Exp77
+Exp78 : TEMP %r15
+Exp79 : TEMP t22
+Stm234 : MOVE Exp78 Exp79
+Stm237 : JUMP L11
+Stm33 : LABEL L6
+Exp47 : TEMP t28
+Exp48 : CONST 1
+Stm167 : MOVE Exp47 Exp48
+Stm37 : JUMP L8
+Stm46 : LABEL L3
+Exp54 : TEMP t29
+Exp55 : CONST 1
+Stm183 : MOVE Exp54 Exp55
+Stm49 : JUMP L1
+Stm240 : LABEL L13
+Stm60 : LABEL L5
+Stm241 : JUMP L1
+Stm242 : LABEL L11
+endMethod
+
+

@@ -1,0 +1,28 @@
+icode1 T simple
+string L1 "Hello\n" 
+mainMethod m_main_0
+
+method m_main_0 Stm10 1 0
+Exp1 : CONST 0
+Stm1 :  ESTM Exp1
+Exp5 : TEMP t11
+Exp4 : NAME L1
+Stm2 : MOVE Exp5 Exp4
+Exp3 : TEMP t10
+Exp6 : TEMP t11
+Stm3 : MOVE Exp3 Exp6
+Stm4 : SEQ Stm2 Stm3
+Exp7 : TEMP t11
+Exp8 : ESEQ Stm4 Exp7
+Stm5 :  ESTM Exp8
+Stm6 : SEQ Stm1 Stm5
+Exp11 : NAME b_printString_0
+Exp10 : TEMP t10
+Exp12 : CALL Exp11 Exp10 
+Stm7 :  ESTM Exp12
+Stm8 : SEQ Stm6 Stm7
+Stm9 : LABEL L0
+Stm10 : SEQ Stm8 Stm9
+endMethod
+
+

@@ -1,0 +1,80 @@
+icode1 Fact simple
+string L2 "\n" 
+mainMethod m_main_0
+
+method m_main_0 Stm3 1 0
+Exp9 : NAME b_printString_0
+Exp7 : NAME b_stringConcatenate_0
+Exp5 : NAME b_intToString_0
+Exp2 : NAME m_fact_0
+Exp1 : CONST 10
+Exp3 : CALL Exp2 Exp1 
+Exp6 : CALL Exp5 Exp3 
+Exp4 : NAME L2
+Exp8 : CALL Exp7 Exp6 Exp4 
+Exp10 : CALL Exp9 Exp8 
+Stm1 :  ESTM Exp10
+Stm2 : LABEL L0
+Stm3 : SEQ Stm1 Stm2
+endMethod
+
+
+method m_fact_0 Stm37 1 0
+Exp12 : TEMP %i0
+Exp13 : CONST 1
+Stm10 : CJUMP LE Exp12 Exp13 L6 L7
+Stm11 : LABEL L6
+Stm12 : SEQ Stm10 Stm11
+Exp40 : TEMP t11
+Exp41 : CONST 1
+Stm13 : MOVE Exp40 Exp41
+Stm14 : SEQ Stm12 Stm13
+Stm15 : JUMP L8
+Stm16 : SEQ Stm14 Stm15
+Stm17 : LABEL L7
+Stm18 : SEQ Stm16 Stm17
+Exp42 : TEMP t11
+Exp43 : CONST 0
+Stm19 : MOVE Exp42 Exp43
+Stm20 : SEQ Stm18 Stm19
+Stm21 : LABEL L8
+Stm22 : SEQ Stm20 Stm21
+Exp44 : TEMP t11
+Exp45 : ESEQ Stm22 Exp44
+Exp46 : CONST 1
+Stm23 : CJUMP EQ Exp45 Exp46 L3 L4
+Stm24 : LABEL L3
+Stm28 : SEQ Stm23 Stm24
+Exp18 : TEMP t10
+Exp20 : TEMP %i0
+Stm4 : MOVE Exp18 Exp20
+Stm5 : JUMP L1
+Stm6 : SEQ Stm4 Stm5
+Stm29 : SEQ Stm28 Stm6
+Stm25 : JUMP L5
+Stm30 : SEQ Stm29 Stm25
+Stm26 : LABEL L4
+Stm31 : SEQ Stm30 Stm26
+Exp22 : TEMP t10
+Exp24 : TEMP %i0
+Exp29 : NAME m_fact_0
+Exp26 : TEMP %i0
+Exp27 : CONST 1
+Exp28 : BINOP MINUS Exp26 Exp27
+Exp30 : CALL Exp29 Exp28 
+Exp39 : BINOP MUL Exp24 Exp30
+Stm7 : MOVE Exp22 Exp39
+Stm8 : JUMP L1
+Stm9 : SEQ Stm7 Stm8
+Stm32 : SEQ Stm31 Stm9
+Stm27 : LABEL L5
+Stm33 : SEQ Stm32 Stm27
+Stm34 : LABEL L1
+Stm35 : SEQ Stm33 Stm34
+Exp49 : TEMP %rax
+Exp48 : TEMP t10
+Stm36 : MOVE Exp49 Exp48
+Stm37 : SEQ Stm35 Stm36
+endMethod
+
+

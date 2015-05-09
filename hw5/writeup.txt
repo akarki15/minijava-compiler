@@ -1,0 +1,4 @@
+Hw5
+Aashish Karki
+
+This version works with T.java, Ex1.java and 

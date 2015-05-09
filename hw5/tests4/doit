@@ -1,0 +1,18 @@
+#
+
+set argcount=$#
+set lastarg=$argv[$argcount]
+set dir=`dirname $lastarg`
+set base=`basename $lastarg .java`
+
+#echo There are $argcount arguments.
+#echo The last one is $lastarg.
+
+echo "Creating intermediate tree..."
+java -cp .. minijava.Main4 -target simple $*
+
+if ($? != 0) exit
+
+echo "Starting interpreter... type run to run it, or ? for more options."
+java -cp .. minijava.Interp $dir/$base.icode1
+
